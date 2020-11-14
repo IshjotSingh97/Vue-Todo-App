@@ -1,11 +1,5 @@
-var title = new Vue({
-	el : '' ,
-	data : {
+console.log("Script started")
 
-	},
-	methods: {
 
-	}
-})
 
-console.log(title)
+console.log("Script ended")
