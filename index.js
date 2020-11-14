@@ -1,5 +1,23 @@
-console.log("Script started")
+const formComponent = {
+	data(){
+		return {
+			id : 1,
+			title : ''
+		}
+	},
+	methods : {
+		add : ()=>{
+			console.log("add method started")
+		}
+	},
+	mounted(){
+		console.log(this.title)
+		this.id++;
+		console.log(this.id)
+	}
 
 
 
-console.log("Script ended")
+}
+
+const formComponentLogger = Vue.createApp(formComponent).mount('#todoform')
