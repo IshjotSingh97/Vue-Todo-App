@@ -11,14 +11,18 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
     <!-- Material Design Bootstrap -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
+    <!-- Icon -->
+    <link rel="icon" href="https://vuejs.org/images/logo.png" type="image/gif" sizes="16x16">
 </head>
 
 <body>
-    <div id="app">
-        {{heading}}
-        <form @submit.prevent="addTodo">
-            <label for="addTodo"></label>
-            <input type="text" name="addTodo" id="addTodo" v-model="title">
+    <div id="app" class="col-md-6" style="margin: 1rem auto;">
+        <h1 style="text-align: center;margin: 1rem auto;display: block;">{{heading}}</h1>
+        <form @submit.prevent="addTodo" class="card">
+            <div class="md-form">
+                <label for="addTodo"></label>
+                <input type="text" name="addTodo" id="addTodo" v-model="title">
+            </div>
             <button type="submit">Add Todo</button>
             {{title}}
         </form>
