@@ -1,23 +1,20 @@
-const formComponent = {
-	data(){
-		return {
-			id : 1,
-			title : ''
-		}
-	},
-	methods : {
-		add : ()=>{
-			console.log("add method started")
-		}
-	},
-	mounted(){
-		console.log(this.title)
-		this.id++;
-		console.log(this.id)
-	}
-
-
-
-}
-
-const formComponentLogger = Vue.createApp(formComponent).mount('#todoform')
+const app = new Vue({
+    el : '#app',
+    data : {
+        heading : "To Do App Using Vue",
+        title : '',
+        done : false,
+        todos : []
+    },
+    methods : {
+        addTodo(){
+            console.log("form submitted")
+            let todo = {
+                title : this.title,
+                done : this.done
+            }
+            this.todos.push(todo)
+            console.log(this.todos)
+        }
+    }
+})
