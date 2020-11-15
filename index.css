@@ -1,0 +1,9 @@
+.myformclass{
+	padding: 1rem;
+}
+
+.mytextcenter{
+	margin: 1rem auto;
+	text-align: center;
+	display: block;
+}

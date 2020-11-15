@@ -13,20 +13,28 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
     <!-- Icon -->
     <link rel="icon" href="https://vuejs.org/images/logo.png" type="image/gif" sizes="16x16">
+    <!-- Custom Css -->
+    <link href="index.css" rel="stylesheet">
+
 </head>
 
 <body>
-    <div id="app" class="col-md-6" style="margin: 1rem auto;">
-        <h1 style="text-align: center;margin: 1rem auto;display: block;">{{heading}}</h1>
-        <form @submit.prevent="addTodo" class="card">
+    <div id="app" class="col-md-6" style="margin: 1rem auto;padding: 1re">
+        <img src="https://vuejs.org/images/logo.png" alt="thumbnail" class="img-thumbnail"
+  style="width: 50px;display: block;margin: 0 auto;">
+        <h1 class="mytextcenter">{{heading}}</h1>
+
+        <form @submit.prevent="addTodo" class="card myformclass">
             <div class="md-form">
-                <label for="addTodo"></label>
-                <input type="text" name="addTodo" id="addTodo" v-model="title">
+                <label for="addTodo">Add a Todo Here ...</label>
+                <input type="text" name="addTodo" id="addTodo" v-model="title" class="form-control">
             </div>
-            <button type="submit">Add Todo</button>
+            <button type="submit">Add</button>
             {{title}}
         </form>
     </div>
+    <hr>
+
     <!-- JQuery -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!-- Bootstrap tooltips -->
