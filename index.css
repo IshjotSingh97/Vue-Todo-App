@@ -7,3 +7,18 @@
 	text-align: center;
 	display: block;
 }
+
+.mydivclass{
+	margin: 1rem auto;
+}
+
+.myimageclass{
+	width: 50px;
+	display: block;
+	margin: 1rem auto
+}
+
+.myitemclass{
+	font-weight: bold;
+	color: black;
+}
