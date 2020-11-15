@@ -18,6 +18,7 @@ const app = new Vue({
         addTodo(){
             console.log("form submitted")
             let todo = {
+                id = this.id 
                 title : this.title,
                 done : this.done
             }
