@@ -10,21 +10,22 @@ const app = new Vue({
     },
     methods : {
         reset(){
-            console.log("reset called")
             this.id++
             this.title = ''
             this.done = false
         },
         addTodo(){
-            console.log("form submitted")
             let todo = {
                 id : this.id ,
                 title : this.title,
                 done : this.done
             }
             this.todos.push(todo)
-            console.log(this.todos)
             this.reset()
+        },
+        removeTodo(todo){
+            const todoIndex = this.todos.indexOf(todo)
+            this.todos.splice(todoIndex,1)
         }
 
     }

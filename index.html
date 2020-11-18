@@ -15,43 +15,35 @@
     <link rel="icon" href="https://vuejs.org/images/logo.png" type="image/gif" sizes="16x16">
     <!-- Custom Css -->
     <link href="index.css" rel="stylesheet">
-     <!-- Required meta tags -->
+    <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
 </head>
 
 <body>
     <div id="app" class="col-md-6 mydivclass">
-
         <img src="https://vuejs.org/images/logo.png" alt="thumbnail" class="img-thumbnail myimageclass">
         <h1 class="mytextcenter h1-responsive">{{heading}}</h1>
-
         <form @submit.prevent="addTodo" class="card myformclass" autocomplete="off">
             <div class="md-form">
                 <label for="addTodo">Add a Todo Here ...</label>
                 <input type="text" name="addTodo" id="addTodo" v-model="title" class="form-control">
             </div>
             <button type="submit" class="btn btn-primary">Add</button>
-            {{title}}
         </form>
-
         <ul class="list-group mydivclass">
-              <li v-for="todo in todos" :key="todo.id" class="list-group-item myitemclass card">
-                  {{todo.id}}.
-                  {{todo.title}}
-                  {{todo.done}}
-                  <p class="mytextcenter" style="color: grey;">Mark as Done or Delete</p>
-                  <input type="checkbox" name="done" id="done" v-model="todo.done" class="form-control mycheck">
-                  <button @click="removeTodo(todo)" class="btn btn-danger mycheck">Delete</button>
-
-              </li>
+            <li v-for="todo in todos" :key="todo.id" class="list-group-item myitemclass card" v-bind:class="{ doneClass : todo.done}">
+                    <h3 class="mytextcenter">
+                        {{todo.id}}.
+                        {{todo.title}}
+                    </h3>
+                    <p class="mytextcenter">Mark as Done or Delete</p>
+                    <input type="checkbox" name="done" id="done" v-model="todo.done" class="form-control mycheck">
+                    <button @click="removeTodo(todo)" class="btn btn-danger mycheck">Delete</button>
+            </li>
         </ul>
-
-
     </div>
     <hr>
-
     <!-- JQuery -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!-- Bootstrap tooltips -->
@@ -62,7 +54,6 @@
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
     <script type="text/javascript" src="index.js"></script>
-    
 </body>
 
 </html>

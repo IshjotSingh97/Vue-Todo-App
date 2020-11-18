@@ -15,7 +15,7 @@
 .myimageclass{
 	width: 50px;
 	display: block;
-	margin: 1rem auto
+	margin: 1rem auto;
 }
 
 .myitemclass{
@@ -25,4 +25,10 @@
 
 .mycheck{
 	width: 100%;
+}
+
+.doneClass{
+	background: #00c851;
+	color: white;
+	font-weight: bold;
 }

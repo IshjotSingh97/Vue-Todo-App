@@ -6,7 +6,7 @@
 https://ishjotsingh97.github.io/Vue-Todo-App/
 
 # How to run on localhost
-<ol class=".bg-gray">
+<ol>
 	<li>Git clone this repository or download this project as a zip folder</li>
 	<li>Move inside this repository and run index.html</li>
 	<li>App will start on your default web browser</li>
