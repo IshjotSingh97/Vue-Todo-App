@@ -19,6 +19,10 @@
 }
 
 .myitemclass{
-	font-weight: bold;
 	color: black;
+	margin-top: 0.5rem;
+}
+
+.mycheck{
+	width: 100%;
 }
