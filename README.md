@@ -1,11 +1,11 @@
 # Vue-Todo-App
 
-<h6>A simple Vue js app to keep track of your tasks</h6>
+# A simple Vue js app to keep track of your tasks 
 
-<h6>App link</h6>
+<h6 style="color: black">App link</h6>
 https://ishjotsingh97.github.io/Vue-Todo-App/
 
-<h6>How to run on localhost</h6>
+<h6 style="color: black">How to run on localhost</h6>
 <ol>
 	<li>Git clone this repository or download this project as a zip folder</li>
 	<li>Move inside this repository and run index.html</li>
