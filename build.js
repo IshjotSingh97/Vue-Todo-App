@@ -4,7 +4,7 @@ let Appurl = "https://ishjotsingh97.github.io/Vue-Todo-App/"
 
 var http = require('http'),fs = require('fs');
 
-fs.readFile('./index.html',function (err, html) {
+fs.readFile('./index.html',(err, html) => {
 	console.log(html)
 })
 
