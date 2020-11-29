@@ -33,7 +33,7 @@
         </form>
         <ul class="list-group mydivclass">
             <li v-for="todo in todos" :key="todo.id" class="list-group-item myitemclass card" v-bind:class="{ doneClass : todo.done}">
-                    <h3 class="mytextcenter">
+                    <h3 class="mytextcenter" style="font-weight: bold;">
                         {{todo.id}}.
                         {{todo.title}}
                     </h3>
