@@ -38,7 +38,7 @@
                         {{todo.title}}
                     </h3>
                     <p class="mytextcenter">Mark as Done or Delete</p>
-                    <input type="checkbox" name="done" id="done" v-model="todo.done" class="form-control mycheck">
+                    <input type="checkbox" name="done" id="done" v-model="todo.done" class="mycheck">
                     <button @click="removeTodo(todo)" class="btn btn-danger mycheck">Delete</button>
             </li>
         </ul>
